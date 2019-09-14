@@ -1,0 +1,10 @@
+alias vim='nvim'
+alias g='git'
+alias gc='git commit'
+alias gs='git status'
+alias mkdir='mkdir -vp'
+
+alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"
+alias java11="/usr/lib/jvm/java-11-openjdk/bin/java"
+alias mvn8="JAVA_HOME=/usr/lib/jvm/java-8-openjdk mvn"
+alias mvn11="JAVA_HOME=/usr/lib/jvm/java-11-openjdk mvn"
