@@ -3,6 +3,11 @@ alias g='git'
 alias gc='git commit'
 alias gs='git status'
 alias mkdir='mkdir -vp'
+alias ls='ls --color=auto'
+alias ll='ls -hl'
+alias la='ls -a'
+alias llha='ls -hla'
+
 
 alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"
 alias java11="/usr/lib/jvm/java-11-openjdk/bin/java"
