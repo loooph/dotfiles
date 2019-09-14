@@ -70,11 +70,13 @@ set showcmd
 " Highlight search results
 set hlsearch
 
+set expandtab
+
 " Show existing tab with 8 spaces width
-set tabstop=8
+set tabstop=4
 
 " When indenting with '>', use 8 spaces width
-set shiftwidth=8
+set shiftwidth=4
 
 " Set the background
 set background=dark
@@ -118,18 +120,9 @@ set rtp^=~/.config/nvim/autoload/
 execute pathogen#infect()
 call pathogen#helptags()
 
-" Set the colorscheme
-colorscheme solarized
-
-" Visually hide the annoying tilde signs
-hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
-
 " Upgrade airline
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
-
-" Set airline theme
-let g:airline_theme='solarized'
 
 " Start NERDTreeTabs on GUI if dir selected
 let g:nerdtree_tabs_open_on_console_startup=2
