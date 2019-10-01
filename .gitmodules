@@ -54,3 +54,6 @@
 	path = nvim/.config/nvim/bundle/far.vim
 	url = https://github.com/brooth/far.vim.git
 	ignore = all
+[submodule "nvim/.config/nvim/bundle/ale"]
+	path = nvim/.config/nvim/bundle/ale
+	url = https://github.com/dense-analysis/ale

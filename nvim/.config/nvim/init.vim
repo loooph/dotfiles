@@ -135,16 +135,6 @@ let NERDTreeShowHidden=1
 " Extra column for syntastic and git-gutter
 hi clear SignColumn
 
-" Initial syntastic config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-
 " Enable deoplete on insert
 autocmd InsertEnter * call deoplete#enable()
 
@@ -156,3 +146,9 @@ set updatetime=1000
 
 " Auto diffupdate
 autocmd BufWritePost * if &diff == 1 | diffupdate | endif
+
+" ALE config
+let g:ale_linters = {
+\    'c': ['clangd', 'clangtidy'],
+\    'cpp': ['clangd', 'clangtidy'],
+\}
